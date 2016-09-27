@@ -6,10 +6,35 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\KalleTest</sprite>
+    <sprites name="Kalle">
+      <sprite>sprites\CarlosKanon</sprite>
+      <sprite>sprites\spr_wall</sprite>
+    </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <backgrounds name="Kalle">
+      <background>background\background0</background>
+    </backgrounds>
+  </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <scripts name="Kalle">
+      <script>scripts\scr_player_normal.gml</script>
+      <script>scripts\scr_getinputs.gml</script>
+      <script>scripts\scr_checkcollisionandmove.gml</script>
+    </scripts>
+  </scripts>
+  <objects name="objects">
+    <objects name="Kalle">
+      <object>objects\obj_wall</object>
+      <object>objects\player_1</object>
+    </objects>
+  </objects>
+  <rooms name="rooms">
+    <rooms name="Kalle">
+      <room>rooms\KalleRoom</room>
+    </rooms>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
