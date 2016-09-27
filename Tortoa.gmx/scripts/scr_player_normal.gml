@@ -1,8 +1,22 @@
 scr_getinputs();
 
 // Move left or right
+
 dir = key_left + key_right;
 hsp = movespeed * dir;
+
+
+
+if (movespeed < max_speed)
+    {
+    movespeed += acc;
+    }
+
+if (dir == 0)
+    {
+        movespeed = resetMoveSpeed;
+    }
+
 
 
 //Gravity
@@ -19,12 +33,3 @@ if (place_meeting(x, y+4, obj_wall))
     
 scr_checkcollisionandmove();
 
-
-        
-    
-    
-    //if (place_meeting(x, y+4, obj_wall)) 
-    //{
-    //    vsp = key_jump * -jumpspeed;
-    //}
- 

@@ -21,3 +21,5 @@ if (place_meeting(x,y+vsp,obj_wall))
       
 x += hsp;
 y += vsp;
+
+

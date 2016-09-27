@@ -33,10 +33,20 @@ grav = 0.7;
 hsp = 0;
 vsp = 0;
 
-movespeed = 8;
+//Friction
+f = 0.5;
+
+acc = 0.7;
+max_speed = 10;
+
+
+movespeed = 2;
+resetMoveSpeed = movespeed;
 jumpspeed = 15;
 
 gamepad_set_axis_deadzone(0, 0.4)
+
+
 </string>
           </argument>
         </arguments>

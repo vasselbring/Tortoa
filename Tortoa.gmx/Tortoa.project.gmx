@@ -14,6 +14,7 @@
   <backgrounds name="background">
     <backgrounds name="Kalle">
       <background>background\background0</background>
+      <background>background\background1</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
