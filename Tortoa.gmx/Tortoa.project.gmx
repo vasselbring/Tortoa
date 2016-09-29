@@ -12,6 +12,9 @@
       <sprite>sprites\anim_pinguy</sprite>
     </sprites>
     <sprite>sprites\spr_wall2</sprite>
+    <sprites name="Jonas">
+      <sprite>sprites\sprite4</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Kalle">
@@ -31,6 +34,9 @@
     <objects name="Kalle">
       <object>objects\obj_wall</object>
       <object>objects\player_1</object>
+    </objects>
+    <objects name="Jonas">
+      <object>objects\player_2</object>
     </objects>
   </objects>
   <rooms name="rooms">
