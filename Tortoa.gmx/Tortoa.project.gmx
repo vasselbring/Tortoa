@@ -21,6 +21,9 @@
       <background>background\background0</background>
       <background>background\background1</background>
     </backgrounds>
+    <backgrounds name="Jonas">
+      <background>background\background2</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -42,6 +45,9 @@
   <rooms name="rooms">
     <rooms name="Kalle">
       <room>rooms\KalleRoom</room>
+    </rooms>
+    <rooms name="Jonas">
+      <room>rooms\room1</room>
     </rooms>
   </rooms>
   <help>
