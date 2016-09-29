@@ -9,7 +9,9 @@
     <sprites name="Kalle">
       <sprite>sprites\CarlosKanon</sprite>
       <sprite>sprites\spr_wall</sprite>
+      <sprite>sprites\anim_pinguy</sprite>
     </sprites>
+    <sprite>sprites\spr_wall2</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Kalle">
