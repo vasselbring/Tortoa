@@ -32,7 +32,11 @@
       <script>scripts\scr_getinputs.gml</script>
       <script>scripts\scr_checkcollisionandmove.gml</script>
     </scripts>
+    <script>scripts\scr_RoomStart.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_Info</font>
+  </fonts>
   <objects name="objects">
     <objects name="Kalle">
       <object>objects\obj_wall</object>
@@ -41,6 +45,7 @@
     <objects name="Jonas">
       <object>objects\player_2</object>
     </objects>
+    <object>objects\obj_GeneralInput</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Kalle">
