@@ -32,7 +32,6 @@ state = states.normal;
 grav = 0.7;
 hsp = 0;
 vsp = 0;
-dir = 0;
 
 //Friction
 f = 0.5;
@@ -100,31 +99,9 @@ switch (state)
           <argument>
             <kind>1</kind>
             <string>///Sprite Control
+//arguments: controlvalue, minanimspeed, maxanimspeed, debug
+scr_PlayerAnimSpeed(hsp,0.2, 0.3, true);
 
-WalkAnimSpeed = scr_PlayerAnimSpeed(dir,0.2,false);
-
-
-//Change image speed depending on movement
-if (xprevious != x)
-{
-    image_speed = 0.3 * WalkAnimSpeed;
-} else
-{
-    image_speed = 0;
-    image_index = 11;
-}
-
-
-
-//Change sprite facing direction depending on movement direction
-if (xprevious &lt; x)
-{
-    image_xscale = 1;
-}
-else if (xprevious &gt; x)
-{
-    image_xscale = -1;
-}
 </string>
           </argument>
         </arguments>
