@@ -32,22 +32,22 @@ state = states.normal;
 grav = 0.7;
 hsp = 0;
 vsp = 0;
+dir = 0;
 
 //Friction
 f = 0.5;
 
 acc = 0.7;
-max_speed = 5;
+max_speed = 3;
 
 
-movespeed = 1.5;
+movespeed = 1.1;
 resetMoveSpeed = movespeed;
 jumpspeed = 14;
 
   
 gamepad_set_axis_deadzone(0, 0.4)
 
-image_speed = 0.2;
 
 </string>
           </argument>
@@ -72,6 +72,8 @@ image_speed = 0.2;
           <argument>
             <kind>1</kind>
             <string>/// State Switch
+
+
 switch (state)
 {
     case states.normal: scr_player_normal(); break;
@@ -98,10 +100,14 @@ switch (state)
           <argument>
             <kind>1</kind>
             <string>///Sprite Control
+
+WalkAnimSpeed = scr_PlayerAnimSpeed(dir,0.2,false);
+
+
 //Change image speed depending on movement
 if (xprevious != x)
 {
-    image_speed = 0.3;
+    image_speed = 0.3 * WalkAnimSpeed;
 } else
 {
     image_speed = 0;

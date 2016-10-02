@@ -75,9 +75,10 @@ if keyboard_check_pressed(vk_pageup)
 
 //Go to previous room
 if keyboard_check_pressed(vk_pagedown)
-{
+{   
+    if room_exists(room_previous(room))
     {
-    room_goto_previous(); 
+        room_goto_previous(); 
     }
 }
 

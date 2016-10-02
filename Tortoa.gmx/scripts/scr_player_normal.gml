@@ -2,7 +2,7 @@ scr_getinputs();
 
 // Move left or right
 
-dir = key_left + key_right;
+dir = key_left + key_right + gamepadH;
 hsp = movespeed * dir;
 
 
