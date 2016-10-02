@@ -20,13 +20,13 @@
   <width>64</width>
   <height>64</height>
   <frames>
-    <frame index="0">images\anim_pinguy_0.png</frame>
-    <frame index="1">images\anim_pinguy_1.png</frame>
-    <frame index="2">images\anim_pinguy_2.png</frame>
-    <frame index="3">images\anim_pinguy_3.png</frame>
-    <frame index="4">images\anim_pinguy_4.png</frame>
-    <frame index="5">images\anim_pinguy_5.png</frame>
-    <frame index="6">images\anim_pinguy_6.png</frame>
-    <frame index="7">images\anim_pinguy_7.png</frame>
+    <frame index="0">images\spr_anim_pinguy_0.png</frame>
+    <frame index="1">images\spr_anim_pinguy_1.png</frame>
+    <frame index="2">images\spr_anim_pinguy_2.png</frame>
+    <frame index="3">images\spr_anim_pinguy_3.png</frame>
+    <frame index="4">images\spr_anim_pinguy_4.png</frame>
+    <frame index="5">images\spr_anim_pinguy_5.png</frame>
+    <frame index="6">images\spr_anim_pinguy_6.png</frame>
+    <frame index="7">images\spr_anim_pinguy_7.png</frame>
   </frames>
 </sprite>

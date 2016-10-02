@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>showHelp = false;
+            <string>///Setup variables
+showHelp = false;
 
 
 infotext = 
@@ -42,7 +43,7 @@ PageDown - Previous Room
         </arguments>
       </action>
     </event>
-    <event eventtype="5" enumb="34">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -59,40 +60,35 @@ PageDown - Previous Room
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Go to Previous Room
-if room_exists(room_previous(room)) 
+            <string>///Keyboard input
+
+
+//Go to Next Room
+if keyboard_check_pressed(vk_pageup)
+{
+    if room_exists(room_next(room)) 
+    {
+        room_goto_next(); 
+    }
+}
+
+
+//Go to previous room
+if keyboard_check_pressed(vk_pagedown)
+{
     {
     room_goto_previous(); 
     }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="5" enumb="33">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Go to Next Room
-if room_exists(room_next(room)) 
-    {
-    room_goto_next(); 
-    }
+}
 
-    
+
+//Quit Game
+if keyboard_check_pressed(vk_escape)
+{
+    {
+    game_end();
+    }
+}
 
 </string>
           </argument>
@@ -144,30 +140,6 @@ if showHelp == true
     draw_text_ext(x1 + 30, y1 + 20, infotext, 30, (x2 - x1 - 40))
     
     }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="27">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Quit Game
-game_end();
 </string>
           </argument>
         </arguments>
