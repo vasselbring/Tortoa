@@ -1,25 +1,36 @@
 scr_getinputs();
 
-// Move left or right
+//Set direction depending on input
+dir = clamp(key_left + key_right + gamepadH,-1,1);
 
-dir = key_left + key_right + gamepadH;
-hsp = movespeed * dir;
-
-
-
-if (movespeed < max_speed)
+//Move left & Right
+if (dir != 0)
+{
+    hsp = movespeed * dir;
+    
+    if (movespeed < max_speed)
     {
     movespeed += acc;
     }
+}
 
+
+//Stop character & apply friction
 if (dir == 0)
+{
+    movespeed = resetMoveSpeed;
+    if (abs(hsp) >= 0)
     {
-        movespeed = resetMoveSpeed;
+        hsp -= f *sign(hsp);
+        if (hsp > -f) && (hsp < f) hsp = 0;
     }
+}
 
-
+//Debug movement speed:
+//show_debug_message(string(hsp));  
 
 //Gravity
+
 if (vsp < 50)
     {
         vsp += grav;

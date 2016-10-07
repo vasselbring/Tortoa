@@ -32,15 +32,13 @@ state = states.normal;
 grav = 0.7;
 hsp = 0;
 vsp = 0;
-
-//Friction
 f = 0.5;
 
 acc = 0.7;
-max_speed = 3;
+max_speed = 8;
 
 
-movespeed = 1.1;
+movespeed = 2;
 resetMoveSpeed = movespeed;
 jumpspeed = 14;
 
@@ -100,7 +98,7 @@ switch (state)
             <kind>1</kind>
             <string>///Sprite Control
 //arguments: controlvalue, minanimspeed, maxanimspeed, debug
-scr_PlayerAnimSpeed(hsp,0.2, 0.3, true);
+scr_PlayerAnimSpeed(hsp,0.2, 0.3, false);
 
 </string>
           </argument>
