@@ -32,7 +32,7 @@ state = states.normal;
 grav = 0.7;
 hsp = 0;
 vsp = 0;
-f = 0.5;
+f = 0.8;
 
 acc = 0.7;
 max_speed = 8;

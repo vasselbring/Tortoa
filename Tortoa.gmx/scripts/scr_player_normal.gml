@@ -10,7 +10,9 @@ if (dir != 0)
     
     if (movespeed < max_speed)
     {
-    movespeed += acc;
+        movespeed += acc;
+        if (movespeed > max_speed) movespeed = max_speed;
+        
     }
 }
 
@@ -37,7 +39,9 @@ if (vsp < 50)
     }
 
 //Jump if on ground
-if (place_meeting(x, y+4, obj_wall))
+
+
+if (place_meeting(x, y+1, obj_wall))
     {
         vsp = key_jump * -jumpspeed;
     }
