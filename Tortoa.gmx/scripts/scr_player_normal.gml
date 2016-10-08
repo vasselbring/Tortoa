@@ -44,7 +44,15 @@ if (vsp < 50)
 if (place_meeting(x, y+1, obj_wall))
     {
         vsp = key_jump * -jumpspeed;
+
     }
+
+//Variable jump height:
+if (vsp < 0) && (!key_jumpHeld) vsp = max(vsp,-jumpspeed/5);
+
+
+//Debug vertical movement speed:
+show_debug_message(string(vsp)); 
     
 scr_checkcollisionandmove();
 
