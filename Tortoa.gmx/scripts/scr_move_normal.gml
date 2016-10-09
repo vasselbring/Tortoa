@@ -3,18 +3,38 @@ scr_getinputs();
 //Set direction depending on input
 dir = clamp(key_left + key_right + gamepadH,-1,1);
 
+
 //Move left & Right
 if (dir != 0)
 {
     hsp = movespeed * dir;
     
-    if (movespeed < max_speed)
+    if (!key_sprint)
     {
-        movespeed += acc;
-        if (movespeed > max_speed) movespeed = max_speed;
+        if (movespeed < max_speed)
+        {
+            movespeed += acc;  
+        }
         
+        if (movespeed > max_speed)
+        {
+            movespeed = max_speed; 
+        }
+    
     }
+
+    if (key_sprint)
+    {
+        movespeed += sprint;
+        if (movespeed > (max_speed + 2)) 
+        {
+            movespeed = max_speed +2; 
+        } 
+    }
+
+    
 }
+
 
 
 //Stop character & apply friction
@@ -52,7 +72,10 @@ if (vsp < 0) && (!key_jumpHeld) vsp = max(vsp,-jumpspeed/5);
 
 
 //Debug vertical movement speed:
-show_debug_message(string(vsp)); 
+//show_debug_message(string(vsp)); 
     
-scr_checkcollisionandmove();
+scr_checkcollision();
+
+x += hsp;
+y += vsp;
 

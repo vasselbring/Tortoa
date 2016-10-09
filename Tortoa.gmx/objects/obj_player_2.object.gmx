@@ -33,12 +33,12 @@ grav = 0.7;
 hsp = 0;
 vsp = 0;
 f = 0.8;
-
-acc = 0.7;
+acc = 0.3;
+sprint = 1.2;
 max_speed = 8;
 
 
-movespeed = 2;
+movespeed = 1;
 resetMoveSpeed = movespeed;
 jumpspeed = 14;
 
@@ -73,7 +73,7 @@ gamepad_set_axis_deadzone(0, 0.4)
 
 switch (state)
 {
-    case states.normal: scr_player_normal(); break;
+    case states.normal: scr_move_normal(); break;
 }
 
 </string>

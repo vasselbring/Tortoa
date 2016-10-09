@@ -33,10 +33,11 @@ grav = 0.7;
 hsp = 0;
 vsp = 0;
 f = 0.4;
-acc = 0.4;
+acc = 0.1;
+sprint = 1.2;
 max_speed = 10;
 
-movespeed = 3;
+movespeed = 0.8;
 resetMoveSpeed = movespeed;
 jumpspeed = 14;
 
@@ -69,7 +70,7 @@ image_speed = 0.5;
             <string>/// State Switch
 switch (state)
 {
-    case states.normal: scr_player_normal(); break;
+    case states.normal: scr_move_normal(); break;
 }
 </string>
           </argument>

@@ -28,10 +28,10 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <scripts name="Kalle">
-      <script>scripts\scr_player_normal.gml</script>
+    <scripts name="Player Movement">
+      <script>scripts\scr_move_normal.gml</script>
       <script>scripts\scr_getinputs.gml</script>
-      <script>scripts\scr_checkcollisionandmove.gml</script>
+      <script>scripts\scr_checkcollision.gml</script>
     </scripts>
     <script>scripts\scr_RoomStart.gml</script>
     <script>scripts\scr_PlayerAnimSpeed.gml</script>
