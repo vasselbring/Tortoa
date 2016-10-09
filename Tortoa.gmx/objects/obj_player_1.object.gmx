@@ -33,11 +33,11 @@ grav = 0.7;
 hsp = 0;
 vsp = 0;
 f = 0.4;
-acc = 0.1;
+acc = 0.5;
 sprint = 1.2;
 max_speed = 10;
 
-movespeed = 0.8;
+movespeed = 2;
 resetMoveSpeed = movespeed;
 jumpspeed = 14;
 

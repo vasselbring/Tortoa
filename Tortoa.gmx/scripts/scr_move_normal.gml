@@ -11,12 +11,12 @@ if (dir != 0)
     
     if (!key_sprint)
     {
-        if (movespeed < max_speed)
+        if (abs(hsp) < max_speed)
         {
             movespeed += acc;  
         }
         
-        if (movespeed > max_speed)
+        if (abs(hsp) > max_speed)
         {
             movespeed = max_speed; 
         }
@@ -26,7 +26,8 @@ if (dir != 0)
     if (key_sprint)
     {
         movespeed += sprint;
-        if (movespeed > (max_speed + 2)) 
+        
+        if (abs(hsp) > (max_speed + 2)) 
         {
             movespeed = max_speed +2; 
         } 
@@ -34,7 +35,6 @@ if (dir != 0)
 
     
 }
-
 
 
 //Stop character & apply friction
@@ -49,7 +49,7 @@ if (dir == 0)
 }
 
 //Debug movement speed:
-//show_debug_message(string(hsp));  
+show_debug_message(string(hsp));  
 
 //Gravity
 
